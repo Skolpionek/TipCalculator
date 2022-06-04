@@ -5,6 +5,7 @@ const CUSTOMVALUE = document.querySelector('#CustomValue')
 const TOTALVALUE = document.querySelector('.TotalValue')
 const TIPVALUE = document.querySelector('.TipValue')
 const ERROR = document.querySelector("div.error")
+const RESET = document.querySelector(".reset")
 
 BUTTONS.forEach(button => {
    button.addEventListener("click",e=>{
@@ -33,3 +34,10 @@ function count(value){
       TOTALVALUE.innerHTML = "$0.00"
    }
 }
+RESET.addEventListener("click",()=>{
+   MONEYINPUT.value = ""
+   PEOPLEINPUT.value = ""
+   CUSTOMVALUE.value = ""
+   TIPVALUE.innerHTML = "$0.00"
+   TOTALVALUE.innerHTML = "$0.00"
+})
