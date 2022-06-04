@@ -159,3 +159,62 @@ div.error{
    bottom: 95px;
    display: none;
 }
+input{
+   background-color: rgba(0, 0, 0, 0.047) !important;
+}
+@media only screen and (max-width: 840px) {
+   body{
+      align-items: flex-end;
+      flex-direction: column;
+   }
+   .container{
+      flex-direction: column;
+      margin: auto;
+   }
+   section{
+      width: 300px;
+     
+   }
+   .right{
+      height: 250px;
+      padding-top: 40px;
+   }
+   .left{
+      height: auto;
+   }
+   section.right div{
+      display: flex;
+      flex-direction: column;
+      height: 50px;
+      column-gap: 70px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      color: hsl(184, 14%, 56%);
+      margin-left: 0;
+   }
+   section.right div h2{
+      width: 100px;
+   }
+   .TipValue,.TotalValue{
+      font-size: 35px;
+      font-weight: 500;
+      display: flex;
+      justify-content: flex-end;
+   }
+   .reset{
+      margin-top: 50px;
+      width: 95%;
+   }
+   .logo{
+      position: inherit;
+      top: 5%;
+      display: block;
+      margin: 40px auto;
+   }
+   .attribution{
+      display: block;
+      margin: auto;
+      width: 100vw;
+   }
+}
