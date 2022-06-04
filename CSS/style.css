@@ -1,0 +1,161 @@
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Changa', sans-serif;
+}
+body{
+   background-color:  hsl(185, 41%, 84%);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo{
+   position: absolute;
+   top: 10%;
+}
+.container{
+   background-color: white;
+   padding: 20px;
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+}
+section{
+   width: 400px;
+   height: 400px;
+   padding: 20px;
+}
+section.left{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+/* section.left div{
+
+} */
+section.left h2{
+   color: hsl(184, 14%, 56%);
+   font-size: 20px;
+   font-weight: 400;
+   margin: 10px 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+section.left input{
+   border: 0;
+   font-size: 20px;
+   font-family: 'Changa', sans-serif;
+   color: hsl(183, 100%, 15%);
+   font-weight: 600;
+   text-align: right;
+   padding: 5px;
+   width: 95%;
+   padding-left: 20px;
+   background-color: hsl(189, 41%, 97%);
+}
+section.left input:focus{
+   outline: hsl(172, 67%, 45%) 2px solid;
+   border-radius: 2px;
+}
+section.left label{
+   position: absolute;
+   margin-left: 5px;
+   margin-top: 9px;
+}
+.buttons{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+.buttons button,.buttons input{
+   background-color: hsl(183, 100%, 15%);
+   width: 100px !important;
+   padding: 10px 10px !important;
+   color: white;
+   border-radius: 5px;
+   border: 0;
+   font-size: 20px;
+   height: 40px;
+}
+.buttons input{
+   background-color: white;
+}
+.buttons button{
+   cursor: pointer;
+}
+.buttons button:hover{
+   background-color: hsl(172, 67%, 45%);
+   color: hsl(183, 100%, 15%);
+}
+section.right{
+   background-color: hsl(183, 100%, 15%);
+   border-radius: 20px;
+}
+.reset{
+   background-color: hsl(172, 67%, 45%);
+   color: hsl(183, 100%, 15%);
+   border-radius: 5px;
+   border: 0;
+   font-size: 20px;
+   height: 40px;
+   padding: 10px;
+   width: 90%;
+   display: block;
+   margin: auto;
+   text-transform: uppercase;
+   font-weight: 700;
+   cursor: pointer;
+   margin-top: 110px;
+}
+.reset:hover{
+   background-color: hsl(172, 100%, 77%);
+}
+section.right div h2{
+   color: white;
+   font-size: 15px;
+   
+}
+section.right div{
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+   color: hsl(184, 14%, 56%);
+   margin-left: 10%;
+}
+
+.TipValue,.TotalValue{
+   font-size: 50px;
+   color: hsl(172, 67%, 45%) !important;
+   overflow-x: hidden;
+   width: 130px;
+}
+input.error{
+   outline: 2px solid red;
+   border-radius: 5px;
+}
+div.error{
+   color: red;
+   position: absolute;
+   right: 40px;
+   bottom: 95px;
+   display: none;
+}
